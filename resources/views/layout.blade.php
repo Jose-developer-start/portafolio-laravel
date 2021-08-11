@@ -9,16 +9,16 @@
     <script src="{{asset('js/app.js')}}" defer></script>
 </head>
 <body>
-    <div id="app" class="d-flex flex-column h-screen" style="height: 100vh">
+    <div id="app" class="d-flex flex-column" style="height: 100vh">
         <header>
             @include('partials.nav')
             @include('partials.session-status')
         </header>
-        <main class="py-4">
+        <main class="py-4 h-screen">
             @yield('content')    
         </main>
         <footer class="bg-white text-black-50 py-3">
-            {{ config('app.name')}} | Copyrigth @ {{ date('Y') }}  
+            <p class="text-center">{{ config('app.name')}} | Copyrigth @ {{ date('Y') }}</p>  
         </footer>
     </div>
 </body>

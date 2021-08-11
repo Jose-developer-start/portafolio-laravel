@@ -32,5 +32,3 @@ Route::resource('portafolio', 'ProjectController')->names('projects')->parameter
 
 Auth::routes(['register' => false]);
 
-Route::get('upload','UploadController@index')->name('upload');
-Route::post('upload','UploadController@store')->name('store');
