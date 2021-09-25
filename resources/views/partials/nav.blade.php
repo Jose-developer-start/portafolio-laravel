@@ -13,6 +13,7 @@
             <li class="nav-item {{ setActive('contact') }}" ><a class="nav-link" href="{{ route('contact') }}">@lang('Contact')</a></li>
             @guest
             <li class="nav-item {{ setActive('login') }}" ><a class="nav-link" href="{{ route('login') }}">@lang('Login')</a></li>
+            <li class="nav-item {{ setActive('register') }}" ><a class="nav-link" href="{{ route('register') }}">@lang('Registrarse')</a></li>
             @else
                 <li class="nav-item"><a class="nav-link" href="#" onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">Cerrar sesión</a></li>  

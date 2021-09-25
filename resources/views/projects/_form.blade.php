@@ -16,5 +16,5 @@
     <textarea class="form-control" name="description">{{ old('description',$project->description) }}</textarea>
 </div>
 
-<button class="btn btn-secondary">{{ $btnText }}</button>
+<button class="btn btn-secondary btn-block">{{ $btnText }}</button>
 <a class="btn btn-info btn-block" href="{{ route('projects.index') }}">Cancelar</a>
